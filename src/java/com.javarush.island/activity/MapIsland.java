@@ -45,8 +45,8 @@ public class MapIsland {
             for (int column = 0; column < getWightIsland(); column++) {
                 String st = "";
                 for (TypesOnIsland types : TypesOnIsland.values()) {
-                    int random = ThreadLocalRandom.current().nextInt(1, factory.creatIsland(types).getMaxCountOnLocation());
-                    ObjectIsland objectIsland = factory.creatIsland(types);
+                    int random = ThreadLocalRandom.current().nextInt(1, factory.createIsland(types).getMaxCountOnLocation());
+                    ObjectIsland objectIsland = factory.createIsland(types);
                     int count = 0;
                     for (int t = 0; t < random; t++) {
                         locations[row][column].getObjectIslands().add(objectIsland);
