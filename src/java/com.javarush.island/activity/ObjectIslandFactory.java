@@ -20,7 +20,7 @@ import com.javarush.island.model.plant.Plant;
 
 public class ObjectIslandFactory {
 
-    public ObjectIsland creatIsland(TypesOnIsland type) {
+    public ObjectIsland createIsland(TypesOnIsland type) {
 
         ObjectIsland objectIsland = null;
         switch (type) {
